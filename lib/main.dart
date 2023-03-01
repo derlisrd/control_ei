@@ -13,10 +13,25 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Control Ingreso Egreso',
+      debugShowCheckedModeBanner: false,
       routes: routes,
-      initialRoute: 'welcome',
+      initialRoute: 'login',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        primaryColor: Colors.blue,
+        colorScheme: ColorScheme(
+          primary: Colors.green,
+          secondary: Colors.greenAccent,
+          onSecondary: Colors.grey,
+          brightness: Brightness.light,
+          background: Colors.grey,
+          onBackground: Colors.grey,
+          onPrimary: Colors.grey,
+          surface: Colors.grey,
+          onSurface: Colors.grey,
+          error:Colors.grey,
+          onError: Colors.grey
+        )
       )
     );
   }
