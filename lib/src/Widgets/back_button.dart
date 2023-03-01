@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget BackButton ( BuildContext context,Color color){
+Widget backButton ( BuildContext context,Color color){
   return IconButton(
     onPressed: 
     (){

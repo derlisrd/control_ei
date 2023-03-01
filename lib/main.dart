@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         primaryColor: Colors.blue,
-        colorScheme: ColorScheme(
+        colorScheme: const ColorScheme(
           primary: Colors.green,
           secondary: Colors.greenAccent,
           onSecondary: Colors.grey,
