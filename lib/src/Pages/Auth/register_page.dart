@@ -7,7 +7,24 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('Register page')),
+      body: Column(children: [
+        Text("Register"),
+        
+      ],),
     );
   }
+
+  
+
+  Widget _backButton(BuildContext context){
+    return IconButton(
+    onPressed: 
+    (){
+     Navigator.pop(context); 
+    },
+    icon: Icon(Icons.arrow_back, color: Colors.black,)
+    );
+  }
+
+
 }

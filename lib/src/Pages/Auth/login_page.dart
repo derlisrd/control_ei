@@ -1,3 +1,4 @@
+import 'package:control_ei/src/Pages/Auth/register_page.dart';
 import 'package:flutter/material.dart';
 
 
@@ -9,7 +10,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       bottomNavigationBar: Container(
         height: 60,
-        child: _textNoHaveAccount(),
+        child: _textNoHaveAccount(context),
       ),
       body: Stack(
         children: [
@@ -144,7 +145,7 @@ class LoginPage extends StatelessWidget {
   }
 
 
-  Widget _textNoHaveAccount(){
+  Widget _textNoHaveAccount(BuildContext context){
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -156,13 +157,19 @@ class LoginPage extends StatelessWidget {
           ),
         ),
         SizedBox( width: 8),
-        Text(
+        GestureDetector(child: Text(
           'Registrate aqui',
           style: TextStyle(
             color: Colors.green,
             fontWeight: FontWeight.bold,
             fontSize: 16
           ),
+        ),
+        onTap:(){
+          Navigator.push(context, 
+          MaterialPageRoute(builder:(context) => RegisterPage()  )
+          );
+        }
         )
       ],
     );
