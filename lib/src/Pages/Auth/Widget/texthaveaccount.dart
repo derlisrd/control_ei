@@ -12,7 +12,10 @@ import 'package:flutter/material.dart';
         ),
         const SizedBox(width: 8),
         GestureDetector(
-            onTap: () { Navigator.pushNamed(context, "login");},
+            onTap: () { 
+              //Navigator.pushNamed(context, "login");
+              Navigator.pop(context);
+            },
             child: const Text(
               'Entra aqui',
               style:  TextStyle(

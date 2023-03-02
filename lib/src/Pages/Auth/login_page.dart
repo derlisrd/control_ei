@@ -1,4 +1,4 @@
-import 'package:control_ei/src/Pages/Auth/register_page.dart';
+
 import 'package:flutter/material.dart';
 
 import 'Widget/textnohaveaccout.dart';
@@ -16,7 +16,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       bottomNavigationBar: SizedBox(
         height: 60,
-        child: _textNoHaveAccount(),
+        child: textNoHaveAccount(context),
       ),
       body: SingleChildScrollView(
           child: Stack(
@@ -72,39 +72,10 @@ class LoginPage extends StatelessWidget {
     ));
   }
 
-  Widget _background(BuildContext context){
-    return Container(
-      width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.4,
-      color: Colors.green,
-      alignment: Alignment.topCenter,
-    );
-  }
 
 
-  Widget _textNoHaveAccount(){
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        // ignore: prefer_const_constructors
-        Text(
-          '¿No tienes cuenta?',
-          style: TextStyle(
-            fontSize: 16
-          ),
-        ),
-        SizedBox( width: 8),
-        Text(
-          'Registrate aqui',
-          style: TextStyle(
-            color: Colors.green,
-            fontWeight: FontWeight.bold,
-            fontSize: 16
-          ),
-        )
-      ],
-    );
-  }
+
+
 
 
 }

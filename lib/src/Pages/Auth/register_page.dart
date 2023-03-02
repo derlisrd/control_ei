@@ -1,13 +1,12 @@
-
-import 'package:control_ei/src/Pages/Auth/Widget/textfieldnombre.dart';
 import 'package:flutter/material.dart';
-
 import 'Widget/backgroundtop.dart';
+import 'Widget/textfieldnombre.dart';
 import 'Widget/textfieldemail.dart';
 import 'Widget/textfieldpass.dart';
 import 'Widget/buttonregister.dart';
 import 'Widget/textinfo.dart';
 import 'Widget/texthaveaccount.dart';
+
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
@@ -15,24 +14,6 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-<<<<<<< HEAD
-      body: Column(children: [
-        Text("Register"),
-        
-      ],),
-    );
-  }
-
-  
-
-  Widget _backButton(BuildContext context){
-    return IconButton(
-    onPressed: 
-    (){
-     Navigator.pop(context); 
-    },
-    icon: Icon(Icons.arrow_back, color: Colors.black,)
-=======
       bottomNavigationBar: SizedBox(
         height: 60,
         child: textHaveAccount(context),
@@ -58,8 +39,6 @@ class RegisterPage extends StatelessWidget {
   }
 
 
-
-  
   Widget _boxForm(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height * 0.6,
@@ -80,16 +59,9 @@ class RegisterPage extends StatelessWidget {
         textFieldPass(),
         buttonRegister(context)
       ])),
->>>>>>> 7d7d9e8fecb68d5e5cbef9bf65dfb6722f245207
     );
   }
 
 
-<<<<<<< HEAD
-=======
 
-
-
-
->>>>>>> 7d7d9e8fecb68d5e5cbef9bf65dfb6722f245207
 }
