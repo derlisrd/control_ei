@@ -14,6 +14,7 @@ Widget textFieldNombre(){
           borderSide: BorderSide.none
         ),
         hintText: "Nombre completo",
+        isDense: true,
         prefixIcon: Icon(Icons.person)
       ),
     ),);

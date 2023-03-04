@@ -10,6 +10,7 @@ import 'Widget/textinfo.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
@@ -31,13 +32,14 @@ class LoginPage extends StatelessWidget {
   }
 
   Widget _boxForm(BuildContext context) {
-    return Container(
+    return Center(child: Container(
       height: MediaQuery.of(context).size.height * 0.5,
       margin: EdgeInsets.only(
           top: MediaQuery.of(context).size.height * 0.1, left: 40, right: 40),
       padding: const EdgeInsets.only(top: 25, right: 25, bottom: 25, left: 25),
       decoration: const BoxDecoration(
           color: Colors.white,
+          borderRadius: BorderRadius.all(Radius.circular(10)),
           boxShadow: <BoxShadow>[
             BoxShadow(
                 color: Colors.black54, blurRadius: 15, offset: Offset(0, 0.75))
@@ -49,6 +51,7 @@ class LoginPage extends StatelessWidget {
         textFieldPass(),
         buttonLogin()
       ])),
+    ),
     );
   }
 

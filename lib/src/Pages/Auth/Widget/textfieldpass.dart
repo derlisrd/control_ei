@@ -14,6 +14,7 @@ Widget textFieldPass (){
         border: OutlineInputBorder(
           borderSide: BorderSide.none
         ),
+        isDense: true,
         hintText: "Contraseña",
         prefixIcon: Icon(Icons.lock)
       ),

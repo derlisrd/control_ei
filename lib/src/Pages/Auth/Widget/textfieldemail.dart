@@ -1,6 +1,9 @@
+
 import 'package:flutter/material.dart';
 
 Widget textFieldEmail (){
+
+ 
     return Container(
       margin: const EdgeInsets.only(top: 15),
       
@@ -10,12 +13,15 @@ Widget textFieldEmail (){
        ),
       child: const TextField(
       keyboardType: TextInputType.emailAddress,
+      
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderSide: BorderSide.none
         ),
         hintText: "E-mail",
-        prefixIcon: Icon(Icons.email)
+        prefixIcon: Icon(Icons.email),
+        isDense: true,
+        contentPadding: EdgeInsets.symmetric(horizontal: 0, vertical: 0)
       ),
     ),);
   }
